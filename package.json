@@ -1,0 +1,20 @@
+{
+  "name": "svelte-scrutiny",
+  "version": "0.0.1",
+  "description": "Query svelte node tree with css selectors.",
+  "license": "MIT",
+  "repository": "github:RedHatter/svelte-scrutiny",
+  "scripts": {
+    "build": "rollup -c",
+    "prepare": "npm run build"
+  },
+  "main": "dist/index.js",
+  "module": "src/index.js",
+  "devDependencies": {
+    "rollup": "^1.15.5"
+  },
+  "dependencies": {
+    "css-select": "^2.0.2",
+    "svelte-listener": "git+https://github.com/RedHatter/svelte-listener.git"
+  }
+}
