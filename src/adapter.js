@@ -99,7 +99,7 @@ const adapter = {
 	getText(node) {
     if (node.type == 'text') return node.detail.nodeValue
 
-    return adapter.getChildren(node).map(getText).join('')
+    return adapter.getChildren(node).map(adapter.getText).join('')
 	}
 }
 
