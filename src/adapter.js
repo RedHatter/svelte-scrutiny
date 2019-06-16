@@ -56,7 +56,7 @@ const adapter = {
 
 	getAttributeValue (node, name){
     return node.type == 'element'
-      ? node.detail.attributes[name]
+      ? name in node.detail.attributes && node.detail.attributes[name].nodeValue
       : node.type == 'component'
       ? node.detail.$$.ctx[name]
       : undefined
